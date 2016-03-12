@@ -1,5 +1,5 @@
 create database pg1;
-CREATE TABLE pg(
+CREATE TABLE pg1.pg(
    id INT AUTO_INCREMENT PRIMARY KEY,
    has_food bool,
    has_laundary bool,
