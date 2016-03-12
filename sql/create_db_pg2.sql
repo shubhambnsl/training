@@ -28,7 +28,7 @@ create table pg2.features
  created_on timestamp DEFAULT CURRENT_TIMESTAMP,
  pg_id INT,
  FOREIGN KEY (pg_id) 
-        REFERENCES pg(id)
+        REFERENCES pg2.pg(id)
     
 );
   
