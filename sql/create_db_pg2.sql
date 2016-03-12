@@ -12,7 +12,6 @@ create table pg2.pg
 id INT AUTO_INCREMENT PRIMARY KEY,
 name char(20),
 addr varchar(30),
-last_updated_on timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
  created_on timestamp DEFAULT CURRENT_TIMESTAMP,
 );
 
@@ -24,7 +23,6 @@ create table pg2.features
  id INT AUTO_INCREMENT PRIMARY KEY,
  feature_name varchar(100),
  value varchar(100),
- last_updated_on timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
  created_on timestamp DEFAULT CURRENT_TIMESTAMP,
  -- created_by = userid or username (db or app)
  -- last_update_by = userid or username (db or app)
