@@ -4,7 +4,7 @@
 drop database pg2;
 
 -- Then create the database
-create database pg12;
+create database pg2;
 
 -- Create the table that stores the Paying Guest Table Data
 create table pg2.pg
