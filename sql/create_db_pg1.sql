@@ -8,8 +8,8 @@ CREATE TABLE pg1.pg(
    has_tv bool,
    has_internet bool,
    has_waterheater bool,
-   name char[20],
-   address varchar[30],
+   name char(20),
+   address varchar(30),
    rent int,
    distance_from_work int
 );
