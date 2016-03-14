@@ -1,0 +1,1 @@
+select * from pg1.pg;
