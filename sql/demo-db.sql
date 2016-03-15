@@ -1,12 +1,12 @@
 drop database demo_database;
 CREATE Database demo_database;
-CREATE TABLE Department(
+CREATE TABLE demo_database.Department(
     DepartmentID varchar(25) not null,
     Floor varchar(25) not null,
     CONSTRAINT pk_dept PRIMARY KEY(DepartmentID, Floor),
 )ENGINE = InnoDB;
 
-CREATE TABLE Employee (
+CREATE TABLE demo_database.Employee (
     ID varchar(25) not null,
     DepartmentID varchar(25),
     Floor varchar(25),
@@ -16,7 +16,7 @@ CREATE TABLE Employee (
 )Engine = InnoDB;
 
 
-CREATE TABLE Attendant(
+CREATE TABLE demo_database.Attendant(
     ID varchar(25) not null,
     DepartmentID varchar(25) not null,
     Floor varchar(25),
