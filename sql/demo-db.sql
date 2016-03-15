@@ -4,7 +4,7 @@ CREATE TABLE demo_database.Department(
     DepartmentID varchar(25) not null,
     Floor varchar(25) not null,
     CONSTRAINT pk_dept PRIMARY KEY(DepartmentID, Floor),
-)ENGINE = InnoDB;
+);
 
 CREATE TABLE demo_database.Employee (
     ID varchar(25) not null,
@@ -13,7 +13,7 @@ CREATE TABLE demo_database.Employee (
     CONSTRAINT pk_ID PRIMARY KEY(ID),
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
         REFRENCES Department(DepartmentID, Floor)
-)Engine = InnoDB;
+);
 
 
 CREATE TABLE demo_database.Attendant(
@@ -26,6 +26,6 @@ CREATE TABLE demo_database.Attendant(
         REFRENCES Employee(DepartmentID, Floor)
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
         REFRENCES Department(DepartmentID, Floor)
-)Engine = InnoDB;
+);
 
 
