@@ -31,8 +31,6 @@ create table pg2.features
         REFERENCES pg2.pg(id)
     
 );
-  
-  
  
     
 
