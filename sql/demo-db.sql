@@ -1,3 +1,4 @@
+CREATE Database demo_database;
 CREATE TABLE Department(
     DepartmentID varchar(25) not null,
     Floor varchar(25) not null,
