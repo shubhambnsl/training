@@ -3,7 +3,7 @@ CREATE Database demo_database;
 CREATE TABLE demo_database.Department(
     DepartmentID varchar(25) not null,
     Floor varchar(25) not null,
-    CONSTRAINT pk_dept PRIMARY KEY(DepartmentID, Floor),
+    CONSTRAINT pk_dept PRIMARY KEY(DepartmentID, Floor)
 );
 
 CREATE TABLE demo_database.Employee (
@@ -23,7 +23,7 @@ CREATE TABLE demo_database.Attendant(
     CONSTRAINT pk_attendant PRIMARY KEY(ID),
     CONSTRAINT ak_attendant UNIQUE(DepartmentID, Floor),
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
-        REFRENCES Employee(DepartmentID, Floor)
+        REFRENCES Employee(DepartmentID, Floor),
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
         REFRENCES Department(DepartmentID, Floor)
 );
