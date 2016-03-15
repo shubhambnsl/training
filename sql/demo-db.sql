@@ -1,3 +1,4 @@
+drop database demo_database;
 CREATE Database demo_database;
 CREATE TABLE Department(
     DepartmentID varchar(25) not null,
