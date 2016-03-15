@@ -12,7 +12,7 @@ CREATE TABLE demo_database.Employee (
     Floor varchar(25),
     CONSTRAINT pk_ID PRIMARY KEY(ID),
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
-        REFRENCES Department(DepartmentID, Floor)
+        REFERENCES Department(DepartmentID, Floor)
 );
 
 
@@ -23,9 +23,9 @@ CREATE TABLE demo_database.Attendant(
     CONSTRAINT pk_attendant PRIMARY KEY(ID),
     CONSTRAINT ak_attendant UNIQUE(DepartmentID, Floor),
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
-        REFRENCES Employee(DepartmentID, Floor),
+        REFERENCES Employee(DepartmentID, Floor),
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
-        REFRENCES Department(DepartmentID, Floor)
+        REFERENCES Department(DepartmentID, Floor)
 );
 
 
