@@ -25,3 +25,5 @@ CREATE TABLE Attendant(
     CONSTRAINT fk_dept FOREIGN KEY(DepartmentID, Floor)
         REFRENCES Department(DepartmentID, Floor)
 )Engine = InnoDB;
+
+
